@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WorkEx
 {
@@ -15,9 +16,22 @@ namespace WorkEx
         public static event EventHandler StartNewGameEvent;
         static void Main(string[] args)
         {
-            StartNewGame();
+            Console.Title = "Welcome to Threads War!!! May the best win...";
+            Console.WriteLine("Exit - exit from application");
+            Console.WriteLine("Some key - start again");
 
-            Console.ReadLine();
+            StartNewGame();
+            while (true)
+            {
+                var key = Console.ReadKey().Key;
+                if (key != ConsoleKey.Escape)
+                {
+                    StartNewGame();
+                }
+
+                else return;
+            }
+
         }
 
         static int[] GetRandomNumberArray(int size)
@@ -75,6 +89,11 @@ namespace WorkEx
 
         static void StartNewGame()
         {
+            StartTasksProcess=null;
+            StartThreadsProcess=null;
+            PrintResultEvent = null;
+            StartNewGameEvent = null;
+
             var duration = 10;
             var numberOfTreads = 10;
             var input = "";
@@ -204,10 +223,11 @@ namespace WorkEx
                         {
                             TimeResultEvent.Invoke();
                         }
-                        if (StartNewGameEvent != null)
-                        {
-                            StartNewGameEvent.Invoke();
-                        }
+
+                        //if (StartNewGameEvent != null)
+                        //{
+                        //    StartNewGameEvent.Invoke();
+                        //}
 
                     }
                 }
