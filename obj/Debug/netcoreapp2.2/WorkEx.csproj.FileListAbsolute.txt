@@ -1,0 +1,11 @@
+C:\Users\michael\source\repos\WorkEx\bin\Debug\netcoreapp2.2\WorkEx.deps.json
+C:\Users\michael\source\repos\WorkEx\bin\Debug\netcoreapp2.2\WorkEx.runtimeconfig.json
+C:\Users\michael\source\repos\WorkEx\bin\Debug\netcoreapp2.2\WorkEx.runtimeconfig.dev.json
+C:\Users\michael\source\repos\WorkEx\bin\Debug\netcoreapp2.2\WorkEx.dll
+C:\Users\michael\source\repos\WorkEx\bin\Debug\netcoreapp2.2\WorkEx.pdb
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.csproj.CoreCompileInputs.cache
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.AssemblyInfoInputs.cache
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.AssemblyInfo.cs
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.dll
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.pdb
+C:\Users\michael\source\repos\WorkEx\obj\Debug\netcoreapp2.2\WorkEx.csprojAssemblyReference.cache
