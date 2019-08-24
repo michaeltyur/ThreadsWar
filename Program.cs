@@ -83,6 +83,10 @@ namespace WorkEx
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("------------------------------------------------------------");
+
+            Console.WriteLine("Press some key for restart the application");
+            Console.WriteLine("Or Escape button for exit from application");
+
         }
 
         static void StartNewGame()
