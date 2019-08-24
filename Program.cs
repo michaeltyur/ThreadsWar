@@ -17,8 +17,6 @@ namespace WorkEx
         static void Main(string[] args)
         {
             Console.Title = "Welcome to Threads War!!! May the best win...";
-            Console.WriteLine("Exit - exit from application");
-            Console.WriteLine("Some key - start again");
 
             StartNewGame();
             while (true)
@@ -29,7 +27,7 @@ namespace WorkEx
                     StartNewGame();
                 }
 
-                else return;
+                else break;
             }
 
         }
@@ -142,7 +140,7 @@ namespace WorkEx
             syncProcess.AfterFinishEvent = StartTasksProcess;
             tasksProcess.AfterFinishEvent = StartThreadsProcess;
             threadsProcess.TimeResultEvent = PrintResultEvent;
-            threadsProcess.StartNewGameEvent = StartNewGameEvent;
+            //threadsProcess.StartNewGameEvent = StartNewGameEvent;
             syncProcess.Start();
         }
 
