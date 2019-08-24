@@ -65,7 +65,7 @@ namespace WorkEx
             Console.WriteLine(multiThreadsTime);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.Write("WENNER : ");
+            Console.Write("WINNER : ");
             Console.ForegroundColor = ConsoleColor.DarkRed;
             if (oneThreadTime < tasksTime && oneThreadTime < multiThreadsTime)
             {
